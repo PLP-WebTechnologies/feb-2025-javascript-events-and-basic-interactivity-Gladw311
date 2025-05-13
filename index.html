@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+    <title>Ultimate JavaScript Playground</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+    <header>
+        <h1>Ultimate JavaScript Playground 🎉</h1>
+        <p>Turn boring web pages into dynamic, responsive, alive experiences!</p>
+    </header>
+
+    <section id="event-handling" class="card">
+        <h2>1. Event Handling 🎈</h2>
+        <button id="myButton" class="btn">Click Me</button>
+        <div id="hoverElement" class="hover-box" tabindex="0" aria-label="Hover or focus me">Hover Me or Focus Me</div>
+        <div id="longPressElement" class="longpress-box" tabindex="0" aria-label="Long press or double click me">Long Press or Double Click Me</div>
+        <p>Press any key and check console for key press logs.</p>
+    </section>
+
+    <section id="interactive-elements" class="card">
+        <h2>2. Interactive Elements 🎮</h2>
+        <button id="changeTextButton" class="btn">Change My Text</button>
+
+        <div id="gallery" class="gallery">
+            <img id="galleryImage" src="https://picsum.photos/id/1015/300/180" alt="Gallery Image" />
+            <button id="nextImage" class="btn small-btn">Next Image</button>
+        </div>
+
+        <div class="tabs">
+            <button class="tab active" data-content="content1" aria-controls="content1" aria-selected="true" role="tab" id="tab1">Tab 1</button>
+            <button class="tab" data-content="content2" aria-controls="content2" aria-selected="false" role="tab" id="tab2">Tab 2</button>
+        </div>
+        <div id="content1" class="tab-content show" role="tabpanel" aria-labelledby="tab1">
+            <p>This is the content for Tab 1. Enjoy the smooth transition!</p>
+        </div>
+        <div id="content2" class="tab-content" role="tabpanel" aria-labelledby="tab2">
+            <p>Welcome to Tab 2 content. This tab fades in when selected.</p>
+        </div>
+    </section>
+
+    <section id="form-validation" class="card">
+        <h2>3. Form Validation 📋✅</h2>
+        <form id="myForm" novalidate>
+            <div class="form-group">
+                <label for="email">Email (required):</label>
+                <input type="email" id="email" name="email" required aria-describedby="emailHelp" />
+                <small id="emailHelp" class="feedback"></small>
+            </div>
+            <div class="form-group">
+                <label for="password">Password (min 8 chars):</label>
+                <input type="password" id="password" name="password" required minlength="8" aria-describedby="passwordHelp" />
+                <small id="passwordHelp" class="feedback"></small>
+            </div>
+            <button type="submit" class="btn submit-btn">Submit</button>
+        </form>
+    </section>
+
+<script src="script.js"></script>
+</body>
+</html>
+
